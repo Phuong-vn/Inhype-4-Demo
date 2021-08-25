@@ -3,8 +3,12 @@
   --color-black: #000;
   --color-text: #424242;
   --color-theme: #3d55ef;
+  --color-main-menu-theme: #fd4145;
 
   --spacing-block: 15px;
+
+  --size-folded-img: 40px;
+  --size-folded-img-small: 35px;
 }
 
 * {
@@ -25,7 +29,7 @@ a {
 
 /* RESPONSIVE */
 .grid {
-  width: 1170px;
+  width: 1200px;
   max-width: 100%;
   padding: 0 var(--spacing-block);
   margin: 0 auto;
@@ -39,6 +43,8 @@ a {
 }
 
 .grid__col-12 {
+  padding-left: var(--spacing-block);
+  padding-right: var(--spacing-block);
   width: 100%;
 }
 
@@ -108,6 +114,59 @@ a {
   width: calc(100% / 12 * 1);
 }
 
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cornerFold {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* POSTS IMAGE */
+.post-img {
+  position: relative;
+}
+
+.post-img:hover {
+  opacity: 0.85;
+}
+
+.post-img:hover .post-img-animation,
+.post-img:hover .post-img-small-animation {
+  display: block;
+}
+
+.post-img-animation,
+.post-img-small-animation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: cornerFold ease 0.3s;
+  transform-origin: right bottom;
+  display: none;
+}
+
+.post-img-animation {
+  border-top: var(--size-folded-img) solid var(--color-theme);
+  border-right: var(--size-folded-img) solid currentColor;  
+}
+
+.post-img-small-animation {
+  border-top: var(--size-folded-img-small) solid var(--color-theme);
+  border-right: var(--size-folded-img-small) solid currentColor;  
+}
+
 /* NOTIF */
 .notif {
   color: var(--color-white);
@@ -125,6 +184,13 @@ a {
 .notif--hot {
   font-size: 10px;
   padding: 3px 5px;
-  margin: 0 7px;
+  margin: -1px 7px 0;
   background-color: #ea3465;
+}
+
+.notif--parallax {
+  font-size: 10px;  
+  padding: 3px 5px;
+  margin: -3px 7px 0;
+  background-color: #2b44ff;
 }

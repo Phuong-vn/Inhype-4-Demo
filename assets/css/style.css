@@ -168,9 +168,11 @@
   z-index: 1;
   top: 42px;
   right: 0;
+  background-color: var(--color-white);
   box-shadow: 0 0 2px rgb(0, 0, 0, 0.14);
   border-radius: 5px;
   display: none;
+  animation: fadeIn ease 0.4s;
 }
 
 .empty-cart {
@@ -191,10 +193,223 @@
   color: #48494b;
 }
 
+/* HEADER MAIN MENU */
+.header-main-menu {
+  background-color: #0f1324;
+  border-radius: 5px;
+}
+
+.main-menu {
+  /* ul tag */
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main-menu li {
+  position: relative;
+}
+
+.main-menu-item-link {
+  /* a tag */
+  color: var(--color-white);
+  font-size: 1.6rem;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  bottom: -3px;
+}
+
+.main-menu-item-link:hover {
+  color: var(--color-main-menu-theme);
+}
+
+.main-menu-item-link i {
+  --font-size: 0.8rem;
+  font-size: var(--font-size);
+  line-height: calc(2 * var(--font-size));
+  margin-left: 10px;
+}
+
+.main-menu-item-link .notif {  
+  position: relative;
+  top: -2px;
+}
+
+/* HEADER SUB MENU */
+.main-menu li:hover .sub-menu-lv0 {
+  display: block;
+}
+
+.sub-menu-lv0 li:hover .sub-menu-lv1 {
+  display: block;
+}
+
+.sub-menu-lv0,
+.sub-menu-lv1 {
+  /* ul tag */
+  list-style: none;
+  width: 240px;
+  padding: 20px;
+  margin: 0;
+  background-color: var(--color-black);
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+  animation: fadeIn ease 0.6s;
+}
+
+.sub-menu-lv0 {
+  /* ul tag */
+  top: calc(100% + 8px);
+  left: 0;
+}
+
+.sub-menu-lv1 {
+  /* ul tag */
+  top: -20px;
+  left: calc(100% + 20px);
+}
+
+.sub-menu-lv0-item-link,
+.sub-menu-lv1-item-link {
+  /* a tag */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1.4rem;
+  color: var(--color-white);
+}
+
+.sub-menu-lv1-item-link {
+  /* a tag */
+  justify-content: flex-start;
+}
+
+.sub-menu-lv0-item-link:hover,
+.sub-menu-lv1-item-link:hover {
+  color: var(--color-main-menu-theme);
+}
+
+.sub-menu-lv0-item-link i,
+.sub-menu-lv1-item-link i {
+  font-size: 1.1rem;
+}
+
+.sub-menu-lv0:before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: -18px;
+  left: 0;
+}
+
+.sub-menu-lv1::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+}
+
+/* HEADER CUSTOMIZE SUBMENU */
+.main-menu-customize:hover ~ .customize-sub-menu,
+.customize-sub-menu:hover {
+  display: block;
+}
+
+.customize-sub-menu {
+  width: 100%;
+  min-height: 350px;
+  position: absolute;
+  top: 100%;
+  background-color: #03110e;
+  border-radius: 5px;
+  padding: var(--spacing-block);
+  display: none;
+}
+
+.customize-sub-menu::before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.customize-sub-menu__header {
+  --font-size: 2.3rem;
+  font-size: var(--font-size);
+  line-height: var(--font-size);
+  border-bottom: 1px solid #a9abaa;
+  color: #eaeaea;
+  padding: 15px 0 20px;
+  margin: 0;
+}
+
+.customize-sub-menu__body {
+  width: 100%;
+  margin-bottom: var(--spacing-block);
+}
+
+.customize-sub-menu__body .post {
+  margin-top: calc(2 * var(--spacing-block));
+  display: flex;
+}
+
+.customize-sub-menu__body .post-img-wrapper {
+  width: 163px;
+  height: 90px;
+  margin-right: calc(2 * var(--spacing-block));
+}
+
+.customize-sub-menu__body .post-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #03110e;
+}
+
+.customize-sub-menu__body .post-details {
+  max-width: 200px;
+}
+
+.customize-sub-menu__body .post-title {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #eaeaea;
+  margin-bottom: 10px;
+}
+
+.customize-sub-menu__body .post-title:hover {
+  color: var(--color-main-menu-theme);
+}
+
+.post-date {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7d8180;
+}
+
+
+
+
 
 
 /* BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY */
-
+.body {
+  height: 500px;
+}
 
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
