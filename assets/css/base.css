@@ -27,6 +27,10 @@ a {
   color: var(--color-black);
 }
 
+p {
+  margin: 0;
+}
+
 /* RESPONSIVE */
 .grid {
   width: 1200px;
@@ -167,6 +171,91 @@ a {
   border-right: var(--size-folded-img-small) solid currentColor;  
 }
 
+/* POST CATEGORY */
+.post-category-wrapper {
+  display: flex;
+}
+
+.post-category {
+  /* a tag */
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  padding: 5px 15px 7px 35px;
+  background-color: var(--color-white);
+  border: 1px solid #e0dede;
+  border-radius: 15px;
+  position: relative;
+}
+
+.post-category:hover {
+  color: var(--color-theme);
+}
+
+.post-category + .post-category {
+  margin-left: 12px;
+}
+
+.post-category--business::before,
+.post-category--creative::before,
+.post-category--news::before,
+.post-category--startup::before,
+.post-category--strategy::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+}
+
+.post-category--business::before {
+  background-color: #994db1;
+}
+
+.post-category--creative::before {
+  background-color: #5b4cce;
+}
+
+.post-category--news::before {
+  background-color: #0d30c3;
+}
+
+.post-category--startup::before {
+  background-color: #6caf00;
+}
+
+.post-category--strategy::before {
+  background-color: #ed7e4f;
+}
+
+/* POST TIME */
+.post-time-wrapper {
+  display: flex;
+  color: #9f9f9f;
+}
+
+.post-time-wrapper .post-date,
+.post-time-wrapper .post-readtime {
+  /* p tag */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: currentColor;
+}
+
+.post-time-wrapper .post-dot {
+  /* span tag */
+  margin: 0 4px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  position: relative;
+  bottom: -4px;
+}
+
 /* NOTIF */
 .notif {
   color: var(--color-white);
@@ -193,4 +282,39 @@ a {
   padding: 3px 5px;
   margin: -3px 7px 0;
   background-color: #2b44ff;
+}
+
+/* BAGDE */
+.post {
+  position: relative;
+}
+
+.bagde {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bagde--rating {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-theme);
+  border: 2px solid currentColor;
+}
+
+.bagde--play {
+  font-size: 1.7rem;
+}
+
+.bagde--img {
+  font-size: 1.4rem;
 }
