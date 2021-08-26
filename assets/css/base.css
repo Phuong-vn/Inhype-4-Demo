@@ -28,7 +28,7 @@ a {
   color: var(--color-black);
 }
 
-p {
+p, h4 {
   margin: 0;
 }
 
@@ -263,7 +263,7 @@ p {
 
 .post-time-wrapper .post-dot {
   /* span tag */
-  margin: 0 4px;
+  margin: 0 8px;
   width: 6px;
   height: 6px;
   border: 1px solid currentColor;
@@ -309,6 +309,7 @@ p {
   content: "";
   width: 40px;
   height: 40px;
+  color: var(--color-black);
   background-color: var(--color-white);
   border-radius: 50%;
   position: absolute;
