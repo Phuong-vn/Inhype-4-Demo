@@ -620,6 +620,32 @@
   font-size: 1.5rem;
 }
 
+/* SHOWCASE - BOTTOM */
+.showcase-bottom {
+  height: 445px;
+}
+
+.showcase-bottom .post-inner {  
+  padding: 0 50px 30px;
+  transition: padding-bottom ease-out 0.2s;
+}
+
+.showcase-bottom .post-inner:hover {
+  padding-bottom: 45px;
+}
+
+.showcase-bottom .post-category-wrapper + .post-category-wrapper {
+  margin-top: 6px;
+}
+
+.showcase-bottom .post-dot {
+  margin-left: 8px;
+}
+
+.showcase-bottom .post-readtime {
+  margin-top: 15px;
+}
+
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 .footer {
