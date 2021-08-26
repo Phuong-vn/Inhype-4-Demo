@@ -140,10 +140,12 @@ p {
 /* POSTS IMAGE */
 .post-img {
   position: relative;
+  filter: brightness(120%);
+  transition: filter ease 0.3s;
 }
 
 .post-img:hover {
-  opacity: 0.85;
+  filter: brightness(100%);
 }
 
 .post-img:hover .post-img-animation,
@@ -187,6 +189,8 @@ p {
   border: 1px solid #e0dede;
   border-radius: 15px;
   position: relative;
+  color: defaut;
+  transition: color ease 0.2s;
 }
 
 .post-category:hover {
@@ -231,12 +235,23 @@ p {
   background-color: #ed7e4f;
 }
 
+/* POST TITLE */
+.post-title {
+  color: default;
+  transition: color ease 0.2s;
+}
+
+.post-title:hover {
+  color: var(--color-theme);
+}
+
 /* POST TIME */
 .post-time-wrapper {
   display: flex;
   color: #9f9f9f;
 }
 
+.post-time-wrapper .post-sponsored,
 .post-time-wrapper .post-date,
 .post-time-wrapper .post-readtime {
   /* p tag */
@@ -313,8 +328,10 @@ p {
 
 .bagde--play {
   font-size: 1.7rem;
+  font-weight: 800;
 }
 
 .bagde--img {
   font-size: 1.4rem;
+  font-weight: 800;
 }
