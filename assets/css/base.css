@@ -4,6 +4,7 @@
   --color-text: #424242;
   --color-theme: #3d55ef;
   --color-main-menu-theme: #fd4145;
+  --color-btn-hover: #48494b;
 
   --spacing-block: 15px;
 
@@ -334,4 +335,22 @@ p {
 .bagde--img {
   font-size: 1.4rem;
   font-weight: 800;
+}
+
+/* BUTTON */
+.btn {
+  min-width: 120px;
+  padding: 16px 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-theme);
+  transition: background-color ease 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--color-btn-hover);
 }
