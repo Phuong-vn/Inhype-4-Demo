@@ -28,8 +28,13 @@ a {
   color: var(--color-black);
 }
 
-p, h4 {
+p, h4, h5, ul, li {
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 /* RESPONSIVE */
@@ -216,23 +221,28 @@ p, h4 {
   left: 12.5%;
 }
 
-.post-category--business::before {
+.post-category--business::before,
+.widget__category--business {
   background-color: #994db1;
 }
 
-.post-category--creative::before {
+.post-category--creative::before,
+.widget__category--creative {
   background-color: #5b4cce;
 }
 
-.post-category--news::before {
+.post-category--news::before,
+.widget__category--news {
   background-color: #0d30c3;
 }
 
-.post-category--startup::before {
+.post-category--startup::before,
+.widget__category--startup {
   background-color: #6caf00;
 }
 
-.post-category--strategy::before {
+.post-category--strategy::before,
+.widget__category--strategy {
   background-color: #ed7e4f;
 }
 
