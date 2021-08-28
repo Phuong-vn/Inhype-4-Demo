@@ -855,8 +855,123 @@
 .content.highlight-post .btn + .btn {
   margin-left: 8px;
 }
+
+/* CONTENT BOTTOM */
+.content-bottom {
+  margin-top: 70px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-bottom .post {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.content-bottom .post-img-wrapper {
+  /* a tag */
+  display: block;
+  width: 160px;
+  height: 120px;
+  margin-right: 30px;
+}
+
+.content-bottom .post-img {
+  width: 160px;
+  height: 100%;
+  color: var(--color-white);
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-bottom .post-title {
+  /* a tag */
+  display: block;
+  margin: 15px 0;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+}
+
+.content-bottom .post-sponsered {
+  font-weight: 600;
+}
+
+.content-bottom .post-sponsered a:hover{
+  color: var(--color-theme);
+}
+
+
+
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 .footer {
-  height: 500px;
-  background-color: #fff;
+  margin: 55px 0 75px 0;
+}
+
+.footer__heading {
+  color: #0f0e0e;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.footer__decs,
+.footer__contact {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 35px;
+}
+
+.footer__list {
+  position: relative;
+  top: 4px;
+}
+
+.footer__list li {
+  margin-bottom: 25px;
+}
+
+.footer__list-itme-link {
+  /* a tag */
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footer__list-itme-link:hover {
+  color: var(--color-theme);
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding: 40px var(--spacing-block);
+}
+
+.footer-bottom .grid__row {
+  justify-content: space-between;
+}
+
+.footer-bottom .desc {
+  font-size: 1.5rem;
+  color: #9F9F9F;
+}
+
+.footer-bottom .desc span {
+  color: var(--color-black);
+}
+
+.socials {
+  display: flex;
+}
+
+.social {
+  margin: 0 12px;
+  font-size: 1.6rem;
+  transition: ease 0.3s;
+}
+
+.social:hover {
+  opacity: 0.5;
 }
