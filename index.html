@@ -8,8 +8,10 @@
   <link rel="icon" href="./assets/img/Logo/logo-2.jpg">
   <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/grid.css">
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"></head>
 <body>
   <!-- HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER -->
@@ -76,9 +78,23 @@
             </div>
     
             <div class="header-right">
-              <a href="">
+              <label for="header-search" class="header-search__icon">
                 <i class="header-right-icon ti-search"></i>
-              </a>
+              </label>                    
+
+              <input type="checkbox" hidden id="header-search">
+
+              <div class="header-search__overlay">
+                <label for="header-search" class="header-search__close">
+                  <i class="header-search__close-icon ti-angle-up"></i>
+                </label>
+
+                <div class="header-search__input-wrapper">
+                  <input class="header-search__input" type="text" placeholder="Type keyword(s) here and hit Enter ...">
+                  <button class="btn">Search</button>
+                </div>
+
+              </div>
     
               <a class="header-cart" href="">
                 <i class="header-right-icon ti-shopping-cart"></i>
