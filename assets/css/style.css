@@ -913,7 +913,7 @@
 
 .content.highlight-post .post-img-wrapper {
   display: block;
-  width: 672px;
+  max-width: 672px;
   height: 436px;
 }
 
