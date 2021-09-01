@@ -47,6 +47,17 @@
   .showcase .post-title {
     font-size: 2.1rem;
   }
+
+  .subscribe-title {
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+    text-align: center;
+  }
+
+  .subscribe-desc {
+    text-align: center;
+    line-height: 1.8rem;
+  }
 }
 
 /* Tablet */
@@ -118,11 +129,41 @@
   .content-body .post-img {
     height: 220px;
   }
+
+  .subscribe-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .subscribe-input-wrapper .btn {
+    width: 100%;
+  }
 }
 
 /* Customize resolution */
 @media (max-width: 1024px) {
   .header-center h4 {
     display: none;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 594px) {
+  .subscribe-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .subscribe-input-wrapper .btn {
+    width: 100%;
   }
 }

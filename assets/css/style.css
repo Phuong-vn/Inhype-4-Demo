@@ -674,15 +674,20 @@
 }
 
 /* SUBSCRIBE */
-.subscribe {  
-  width: 100%;
-  height: 320px;
+.subscribe-wrapper {
+  padding: 80px 60px;
   border-radius: 5px;
   background-image: url(https://wp.wp-preview.com/inhype/inhype-4/wp-content/uploads/2020/01/ebklukcx6tq.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.subscribe {  
+  width: 100%;
+  height: 320px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
