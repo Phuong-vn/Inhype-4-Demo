@@ -71,6 +71,10 @@
   .carousel-bottom .post {
     margin-bottom: 50px;
   }
+
+  .showcase-bottom {
+    display: none;
+  }
 }
 
 /* Tablet */
@@ -106,7 +110,7 @@
 
   .content-body .post-img {
     height: 320px;
-  }
+  }  
 }
 
 /* Mobile */
@@ -155,7 +159,7 @@
 
   .subscribe-input-wrapper .btn {
     width: 100%;
-  }
+  }  
 }
 
 /* Customize resolution */

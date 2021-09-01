@@ -724,6 +724,10 @@
   height: 445px;
 }
 
+.showcase-bottom .post-img {
+  width: 20%;
+}
+
 .showcase-bottom .post-inner {  
   padding: 0 50px 30px;
   transition: padding-bottom ease-out 0.2s;
