@@ -107,6 +107,10 @@
   .content.highlight-post .content-heading {
     margin-bottom: 45px;
   }
+
+  .content-bottom .post {
+    justify-content: unset;
+  }
 }
 
 /* Tablet */
