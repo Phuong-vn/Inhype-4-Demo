@@ -79,6 +79,10 @@
   .header-search__input-wrapper .btn {
     transform: translateX(-2px);
   }
+
+  .content-body .post-img {
+    height: 320px;
+  }
 }
 
 /* Mobile */
@@ -104,6 +108,15 @@
     line-height: 1.8rem;
     font-size: 1.4em;
     border-radius: 5px;
+  }
+
+  .content-body .post-title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .content-body .post-img {
+    height: 220px;
   }
 }
 
