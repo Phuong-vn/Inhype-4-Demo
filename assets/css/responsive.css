@@ -111,6 +111,10 @@
   .content-bottom .post {
     justify-content: unset;
   }
+
+  .footer .row .col {
+    margin-bottom: 30px;
+  }
 }
 
 /* Tablet */
@@ -226,6 +230,21 @@
 
   .post.post--recent .post-paragraph ~ .btn {
     display: none;
+  }
+
+  .footer-bottom .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom .desc {
+    text-align: center;
+    line-height: 2.4rem;
+    margin-bottom: 30px;
+  }
+
+  .footer-bottom .socials {
+    text-align: center;
   }
     
 }
