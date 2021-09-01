@@ -48,6 +48,11 @@
     font-size: 2.1rem;
   }
 
+  .carousel .post-title {
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+  }
+
   .subscribe-title {
     font-size: 3.4rem;
     line-height: 4.2rem;
@@ -57,6 +62,14 @@
   .subscribe-desc {
     text-align: center;
     line-height: 1.8rem;
+  }
+
+  .carousel-bottom {
+    margin-bottom: 10px;
+  }
+
+  .carousel-bottom .post {
+    margin-bottom: 50px;
   }
 }
 
@@ -149,6 +162,12 @@
 @media (max-width: 1024px) {
   .header-center h4 {
     display: none;
+  }
+}
+
+@media (min-width: 226px) and (max-width: 568px) {  
+  .carousel .post-img-wrapper {
+    height: 340px;
   }
 }
 
