@@ -72,8 +72,9 @@
     margin-bottom: 50px;
   }
 
-  .showcase-bottom {
-    display: none;
+  .showcase-bottom .post-img {
+    height: 450px;
+    min-width: 50%;
   }
 
   .content-sidebar-wrapper {
@@ -205,6 +206,10 @@
 
   .subscribe-input-wrapper .btn {
     width: 100%;
+  }
+
+  .showcase-bottom .post-img {
+    min-width: 100%;
   }
 
   .content-sidebar-wrapper .content {
